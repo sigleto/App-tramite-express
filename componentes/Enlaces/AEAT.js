@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet,Linking } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const AEAT = () => {
@@ -43,7 +43,7 @@ const AEAT = () => {
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT4")}>
             <Text style={styles.itemText}>Contestación a una comunicación de la Agencia</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("WebPageScreen", { url: 'https://www2.agenciatributaria.gob.es/wlpl/TOCP-MUTE/internet/identificacion' })}>
+          <TouchableOpacity style={styles.item} onPress={() =>  Linking.openURL('https://www2.agenciatributaria.gob.es/wlpl/TOCP-MUTE/internet/identificacion' )}>
             <Text style={styles.itemText}>Petición de cita previa</Text>
           </TouchableOpacity>
         </View>

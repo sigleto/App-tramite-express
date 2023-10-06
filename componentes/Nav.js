@@ -30,13 +30,11 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 
-function OrganismosStack() {
+export function OrganismosStack() {
   return (
     <Stack.Navigator>
 
       <Stack.Screen name="Organismos" component={Organismos}options={{ headerShown: false }} />
-      <Stack.Screen name="Home" component={Home}options={{ headerShown: false }} />
-      <Stack.Screen name="Presentacion" component={Presentacion} options={{ headerShown: false }} />
       <Stack.Screen name="AEAT" component={AEAT} options={{ headerShown: false }} />
       <Stack.Screen name="Catastro" component={Catastro} options={{ headerShown: false }} />
       <Stack.Screen name="Justicia" component={Justicia} options={{ headerShown: false }} />
@@ -60,11 +58,19 @@ function OrganismosStack() {
       <Stack.Screen name="AvisosTrafico5" component={AvisosTrafico5}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoSegSocial1" component={AvisoSegSocial1}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoSegSocial2" component={AvisoSegSocial2}options={{ headerShown: false }} />
-
-
     </Stack.Navigator>
   );
 }
+export function PresentacionStack() {
+  return (
+    <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Presentacion" component={Presentacion} />
+    </Stack.Navigator>
+  );
+}
+
+
 
 const Nav = () => {
   return (
@@ -79,7 +85,7 @@ const Nav = () => {
       >
         <Tab.Screen
           name="Home"
-          component={Home}
+          component={PresentacionStack}
           options={{ tabBarLabel: 'INICIO', tabBarIcon: () => (
             <MaterialCommunityIcons name="home"  size={26} />), headerShown: false}}
         />

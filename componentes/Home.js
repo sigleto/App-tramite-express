@@ -1,14 +1,11 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Asumiendo que estás utilizando React Navigation
+import { useNavigation,Link } from '@react-navigation/native'; // Asumiendo que estás utilizando React Navigation
 
 const Home = () => {
   const navigation = useNavigation();
 
-  const handleComenzar = () => {
-    navigation.navigate('Presentacion'); // Reemplaza 'Presentacion' con el nombre de tu ruta en React Navigation
-  };
-
+  
   return (
     <View style={styles.container}>
       <Image source={require('../assets/LogoJuan.png')} style={styles.logo} />
@@ -19,7 +16,7 @@ const Home = () => {
         te ofrecemos breves notas informativas sobre los requisitos necesarios para
         cada trámite específico. ¡Facilitamos tu camino hacia la burocracia!
       </Text>
-      <TouchableOpacity onPress={handleComenzar} style={styles.botonComenzar}>
+      <TouchableOpacity onPress={()=>navigation.navigate("Presentacion")} style={styles.botonComenzar}>
         <Text style={styles.botonTexto}>Comenzar</Text>
       </TouchableOpacity>
     </View>
