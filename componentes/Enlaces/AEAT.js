@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   image: {
+    marginTop:60,
     width: "100%",
     height: 200,
     resizeMode: "cover",

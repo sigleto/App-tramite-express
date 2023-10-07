@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
-import { useNavigation,Link } from '@react-navigation/native'; // Asumiendo que estás utilizando React Navigation
 
 const Home = () => {
-  const navigation = useNavigation();
+  
+  
 
   
   return (
@@ -16,9 +16,7 @@ const Home = () => {
         te ofrecemos breves notas informativas sobre los requisitos necesarios para
         cada trámite específico. ¡Facilitamos tu camino hacia la burocracia!
       </Text>
-      <TouchableOpacity onPress={()=>navigation.navigate("Presentacion")} style={styles.botonComenzar}>
-        <Text style={styles.botonTexto}>Comenzar</Text>
-      </TouchableOpacity>
+     
     </View>
   );
 };
@@ -31,11 +29,11 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: 300,
+    height: 200,
   },
   burocraciaImage: {
-    width: 200,
+    width: 300,
     height: 200,
   },
   titulo: {
@@ -46,6 +44,8 @@ const styles = StyleSheet.create({
   descripcion: {
     textAlign: 'center',
     marginTop: 20,
+    fontSize:20,
+    color:'#67569a'
   },
   botonComenzar: {
     backgroundColor: 'blue', // Color de fondo del botón

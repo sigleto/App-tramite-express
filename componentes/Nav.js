@@ -7,7 +7,9 @@ import { MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
 
 
 import Home from './Home';
-import Presentacion from './Presentacion';
+import Presentacion1 from './Presentacion/Presentacion1';
+import Presentacion2 from './Presentacion/Presentacion2';
+import Presentacion3 from './Presentacion/Presentacion3';
 import Organismos from './Organismos';
 import Contacto from './Contacto';
 import AEAT from './Enlaces/AEAT'
@@ -34,7 +36,7 @@ export function OrganismosStack() {
   return (
     <Stack.Navigator>
 
-      <Stack.Screen name="Organismos" component={Organismos}options={{ headerShown: false }} />
+      <Stack.Screen name="OrganismosStack" component={Organismos}options={{ headerShown: false }} />
       <Stack.Screen name="AEAT" component={AEAT} options={{ headerShown: false }} />
       <Stack.Screen name="Catastro" component={Catastro} options={{ headerShown: false }} />
       <Stack.Screen name="Justicia" component={Justicia} options={{ headerShown: false }} />
@@ -63,9 +65,10 @@ export function OrganismosStack() {
 }
 export function PresentacionStack() {
   return (
-    <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Presentacion" component={Presentacion} />
+    <Stack.Navigator initialRouteName="Presentacion1" screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Presentacion1" component={Presentacion1} screenOptions={{ headerShown: false }}/>
+      <Stack.Screen name="Presentacion2" component={Presentacion2} screenOptions={{ headerShown: false }}/>
+      <Stack.Screen name="Presentacion3" component={Presentacion3} screenOptions={{ headerShown: false }}/>
     </Stack.Navigator>
   );
 }
@@ -74,7 +77,7 @@ export function PresentacionStack() {
 
 const Nav = () => {
   return (
-    <NavigationContainer style={styles.container}>
+   
       <Tab.Navigator
         screenOptions={{
           tabBarActiveTintColor: 'blue', // Color de la pestaña activa
@@ -85,7 +88,7 @@ const Nav = () => {
       >
         <Tab.Screen
           name="Home"
-          component={PresentacionStack}
+          component={Home}
           options={{ tabBarLabel: 'INICIO', tabBarIcon: () => (
             <MaterialCommunityIcons name="home"  size={26} />), headerShown: false}}
         />
@@ -103,7 +106,7 @@ const Nav = () => {
           ), headerShown: false }}
         />
       </Tab.Navigator>
-    </NavigationContainer>
+   
   );
 };
 

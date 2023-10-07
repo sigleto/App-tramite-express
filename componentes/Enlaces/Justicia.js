@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     height: 200,
     resizeMode: "cover",
     marginBottom: 16,
+    marginTop:60,
   },
   titulo: {
     fontSize: 24,
