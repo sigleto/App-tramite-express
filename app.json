@@ -4,10 +4,10 @@
     "slug": "Tramite-express",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icono4.png",
+    "icon": "./assets/Icono4.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/icono3.png",
+      "image": "./assets/Icono3.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icono3.png",
+        "foregroundImage": "./assets/Icono4.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.sigleto.Tramiteexpress"

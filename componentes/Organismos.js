@@ -16,6 +16,8 @@ const Organismos = () => {
     { nombre: 'Tráfico', ruta: 'Trafico' },
     { nombre: 'Justicia', ruta: 'Justicia' },
     { nombre: 'Catastro', ruta: 'Catastro' },
+    { nombre: 'S E P E', ruta: 'SEPE' },
+    { nombre: 'M U F A C E', ruta: 'MUFACE' },
   ];
 
   return (

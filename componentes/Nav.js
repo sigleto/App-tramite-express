@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
 
@@ -12,10 +11,12 @@ import Presentacion2 from './Presentacion/Presentacion2';
 import Presentacion3 from './Presentacion/Presentacion3';
 import Organismos from './Organismos';
 import Contacto from './Contacto';
-import AEAT from './Enlaces/AEAT'
-import Catastro from './Enlaces/Catastro'
-import Justicia from './Enlaces/Justicia'
-import PoliciaNacional from './Enlaces/PoliciaNacional'
+import AEAT from './Enlaces/AEAT';
+import SEPE from './Enlaces/SEPE';
+import MUFACE from './Enlaces/MUFACE';
+import Catastro from './Enlaces/Catastro';
+import Justicia from './Enlaces/Justicia';
+import PoliciaNacional from './Enlaces/PoliciaNacional';
 import SegSocial from './Enlaces/SeguridadSocial';
 import Trafico from './Enlaces/Trafico'
 import { AvisoAEAT1, AvisoAEAT2, AvisoAEAT3, AvisoAEAT4, AvisoAEAT5, AvisoAEAT6 } from './Avisos/AvisosAEAT'
@@ -24,6 +25,8 @@ import { AvisoJusticia } from './Avisos/AvisosJusticia'
 import { AvisoCatastro1,AvisoCatastro2 } from './Avisos/AvisosCatastro';
 import { AvisosTrafico1, AvisosTrafico2, AvisosTrafico3, AvisosTrafico4, AvisosTrafico5 } from './Avisos/AvisosTrafico';
 import { AvisoSegSocial1, AvisoSegSocial2 } from './Avisos/AvisosSegSocial'
+import { AvisoSEPE1, AvisoSEPE2 } from './Avisos/AvisoSEPE'
+import { AvisoMUFACE1, AvisoMUFACE2,AvisoMUFACE3 } from './Avisos/AvisosMUFACE'
 
 
 
@@ -38,6 +41,8 @@ export function OrganismosStack() {
 
       <Stack.Screen name="OrganismosStack" component={Organismos}options={{ headerShown: false }} />
       <Stack.Screen name="AEAT" component={AEAT} options={{ headerShown: false }} />
+      <Stack.Screen name="SEPE" component={SEPE} options={{ headerShown: false }} />
+      <Stack.Screen name="MUFACE" component={MUFACE} options={{ headerShown: false }} />
       <Stack.Screen name="Catastro" component={Catastro} options={{ headerShown: false }} />
       <Stack.Screen name="Justicia" component={Justicia} options={{ headerShown: false }} />
       <Stack.Screen name="PoliciaNacional" component={PoliciaNacional} options={{ headerShown: false }} />
@@ -49,6 +54,11 @@ export function OrganismosStack() {
       <Stack.Screen name="AvisoAEAT4" component={AvisoAEAT4}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoAEAT5" component={AvisoAEAT5}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoAEAT6" component={AvisoAEAT6}options={{ headerShown: false }} />
+      <Stack.Screen name="AvisoSEPE1" component={AvisoSEPE1}options={{ headerShown: false }} />
+      <Stack.Screen name="AvisoMUFACE1" component={AvisoMUFACE1}options={{ headerShown: false }} />
+      <Stack.Screen name="AvisoMUFACE2" component={AvisoMUFACE2}options={{ headerShown: false }} />
+      <Stack.Screen name="AvisoMUFACE3" component={AvisoMUFACE3}options={{ headerShown: false }} />
+      <Stack.Screen name="AvisoSEPE2" component={AvisoSEPE2}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoPolicia" component={AvisoPolicia}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoJusticia" component={AvisoJusticia}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoCatastro1" component={AvisoCatastro1}options={{ headerShown: false }} />
