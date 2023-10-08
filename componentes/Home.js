@@ -1,8 +1,11 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet,Linking } from 'react-native';
 
 const Home = () => {
-  
+  const politica = (url) => {
+    Linking.openURL(url);
+  };
+
   
 
   
