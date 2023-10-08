@@ -112,8 +112,7 @@ const Nav = () => {
           name="Contacto"
           component={Contacto}
           options={{ tabBarLabel: 'CONTACTO', tabBarIcon: () => (
-            <MaterialCommunityIcons name="contacts"  size={26} />
-          ), headerShown: false }}
+            <MaterialCommunityIcons name="contacts"  size={26} />), headerShown: false }}
         />
       </Tab.Navigator>
    

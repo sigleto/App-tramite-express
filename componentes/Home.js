@@ -16,7 +16,17 @@ const Home = () => {
         te ofrecemos breves notas informativas sobre los requisitos necesarios para
         cada trámite específico. ¡Facilitamos tu camino hacia la burocracia!
       </Text>
-     
+      <View style={styles.privacidadContainer}>
+        <TouchableOpacity
+          onPress={() =>
+            politica(
+              "https://docs.google.com/document/d/1WeAEvL7FxXA_O4_zxrsrNYAwIotUXOKZeOv_mMZOV-c/edit"
+            )
+          }
+        >
+          <Text style={styles.privacidad}>Política de privacidad</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -57,6 +67,11 @@ const styles = StyleSheet.create({
     color: 'white', // Color del texto del botón
     textAlign: 'center',
     fontWeight: 'bold',
+  }, privacidadContainer: {
+    position: "absolute",
+    bottom: 0,
+    right: 0,
+    padding: 8,
   },
 });
 

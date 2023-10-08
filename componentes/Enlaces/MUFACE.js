@@ -16,7 +16,7 @@ const MUFACE = () => {
 
       <View style={styles.serviciosList}>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoMUFACE1")}>
-          <Text style={styles.itemText}>TALONARIO DE RECETAS</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>TALONARIO DE RECETAS</Text>
         </TouchableOpacity><TouchableOpacity style={styles.item} onPress={() => openLink('https://www.muface.es/muface_Home/encuentra-tu-medico/catalogo-medicos-y-servicios.html')}>
           <Text style={styles.itemText}>ENCUENTRA TU MÉDICO</Text>
         </TouchableOpacity>
@@ -24,10 +24,10 @@ const MUFACE = () => {
           <Text style={styles.itemText}>CITA PREVIA</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoMUFACE3")}>
-          <Text style={styles.itemText}>PRESTACIONES DENTARIAS Y OCULARES</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>PRESTACIONES DENTARIAS Y OCULARES</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoMUFACE2")}>
-          <Text style={styles.itemText}>TARJETA SANITARIA EUROPEA</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>TARJETA SANITARIA EUROPEA</Text>
         </TouchableOpacity>
        
       </View>
@@ -69,7 +69,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
-  },
+  },arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default MUFACE;

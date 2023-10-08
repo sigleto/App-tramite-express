@@ -11,7 +11,7 @@ const Presentacion1 = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.parrafo}>
-        Hemos diseñado esta aplicación para reunir de manera centralizada los procedimientos públicos más habituales que se utilizan en la vida cotidiana en diversos organismos gubernamentales.
+        Aquí encontrarás los trámites públicos más habituales más comunmente empleados en diversos organismos gubernamentales.
        </Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.skipButton} onPress={salto}>
@@ -29,19 +29,21 @@ const Presentacion1 = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor:'#d9d7fa',
+    
   },
   link: {
     color: "blue",
     textDecorationLine: "underline",
   },
   parrafo: {
-    fontSize: 25,
-    textAlign: 'justify',
+    fontSize: 30,
+    textAlign: 'center',
     marginBottom: 30,
-    paddingHorizontal: 20,
+    paddingHorizontal: 5,
   },
   buttonContainer: {
     flexDirection: 'row',

@@ -25,16 +25,17 @@ const Contacto = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Contacto</Text>
+      <Text style={styles.titulo}>Contacta con nosotros</Text>
       <Controller
         control={control}
         render={({ field }) => (
           <View style={styles.campos}>
-            <Text>Alias</Text>
+            <Text style={styles.zona}>Alias</Text>
             <TextInput
               placeholder="Introduce tu alias"
               onChangeText={field.onChange}
               value={field.value}
+              style={styles.inputc}
             />
           </View>
         )}
@@ -46,7 +47,7 @@ const Contacto = () => {
         control={control}
         render={({ field }) => (
           <View style={styles.campos}>
-            <Text>E-Mail</Text>
+            <Text style={styles.zona}>E-Mail</Text>
             <TextInput
               placeholder="Sólo si quieres que te contestemos"
               onChangeText={field.onChange}
@@ -68,11 +69,12 @@ const Contacto = () => {
         control={control}
         render={({ field }) => (
           <View style={[styles.campos, styles.comentarios]}>
-            <Text>COMENTARIOS</Text>
+            <Text style={styles.zona}>Comentarios</Text>
             <TextInput
               placeholder="Puedes informarnos de algún trámite u organismo que deseas que incluyamos, corrección o sugerencia"
               onChangeText={field.onChange}
               value={field.value}
+              style={styles.inputc}
               multiline
             />
           </View>
@@ -88,7 +90,7 @@ const Contacto = () => {
           <Text>Eso no es un correo válido</Text>
         </View>
       )}
-      <Image source={require('../assets/contacto.jpg')} style={styles.gatito} />
+      <Image source={require('../assets/Contacto.png')} style={styles.gatito} />
     </View>
   );
 };
@@ -97,11 +99,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
+   
   },
   titulo: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+    marginTop:50,
+    marginBottom:45,
   },
   campos: {
     marginBottom: 20,
@@ -116,7 +121,7 @@ const styles = StyleSheet.create({
     height: 100,
   },
   enviando: {
-    backgroundColor: 'blue',
+    backgroundColor: '#c3bff9',
     padding: 10,
     borderRadius: 5,
     alignItems: 'center',
@@ -128,6 +133,9 @@ const styles = StyleSheet.create({
     height: 200,
     alignSelf: 'center',
   },
+  zona:{
+    fontSize:25,
+  }
 });
 
 export default Contacto;

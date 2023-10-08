@@ -14,8 +14,7 @@ const Presentacion2 = () => {
     <View style={styles.container}>
       <Text style={styles.parrafo}>
       Aunque en muchos de estos procedimientos no es necesario que los usuarios se autentiquen previamente, en algunos casos sí es requerido.
-        Esta autenticación puede realizarse a través de diferentes métodos, como el certificado digital, el DNI electrónico o el sistema cl@ve (que puedes solicitar en este 
-        <Text style={styles.link} onPress={() => Linking.openURL("https://sede.agenciatributaria.gob.es/Sede/clave.html")}> enlace</Text>).
+        
         </Text>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.skipButton} onPress={salto}>
@@ -36,16 +35,18 @@ const styles = StyleSheet.create({
     padding: 20,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor:'#d9d7fa'
+
   },
   link: {
     color: "blue",
     textDecorationLine: "underline",
   },
   parrafo: {
-    fontSize: 23,
+    fontSize: 30,
     textAlign: 'justify',
     marginBottom: 30,
-    paddingHorizontal: 20,
+    
   },
   buttonContainer: {
     flexDirection: 'row',

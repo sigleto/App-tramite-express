@@ -28,10 +28,10 @@ const SegSocial = () => {
           <Text style={styles.itemText}>Solicitud Prestacion Incapacidad Temporal</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoSegSocial1")}>
-          <Text style={styles.itemText}>Obtención del número de afiliado de la Seg Social</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Obtención del número de afiliado de la Seg Social</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoSegSocial2")}>
-          <Text style={styles.itemText}>Solicitud de la pensión por jubilación</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Solicitud de la pensión por jubilación</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
@@ -72,7 +72,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
-  },
+  },arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default SegSocial;

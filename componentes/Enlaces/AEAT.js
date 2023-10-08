@@ -15,23 +15,23 @@ const AEAT = () => {
         <Text style={styles.subHeading}>Trámites que requieren Cl@ve Móvil:</Text>
         <View style={styles.serviciosList}>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT2")}>
-            <Text style={styles.itemText}>Consulta de deudas</Text>
+            <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Consulta de deudas</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT3")}>
-            <Text style={styles.itemText}>Consulta de la declaración de IRPF</Text>
+            <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Consulta de la declaración de IRPF</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT5")}>
-            <Text style={styles.itemText}>
+            <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>
               Gestión modelo 140 (Abono anticipado deducción por maternidad)
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT6")}>
-            <Text style={styles.itemText}>
+            <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>
               Gestión modelo 143 (Abono anticipado por deducción de familia numerosa/ascendientes con dos hijos/Personas con discapacidad a cargo)
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT1")}>
-            <Text style={styles.itemText}>Presentación de escrito sin comunicación previa</Text>
+            <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Presentación de escrito sin comunicación previa</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -95,6 +95,10 @@ const styles = StyleSheet.create({
     color: "#007AFF",
     fontWeight: "bold",
   },
+  arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default AEAT;

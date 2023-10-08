@@ -63,7 +63,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
-  },
+  },arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default PoliciaNacional;

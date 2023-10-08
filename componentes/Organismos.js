@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet,ScrollView} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
 const Organismos = () => {
@@ -21,8 +21,8 @@ const Organismos = () => {
   ];
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.tituloOrg}>¿En qué organismo deseas ingresar?</Text>
+    <ScrollView style={styles.container}>
+      <Text style={styles.tituloOrg}>Elige el organismo al que deseas acceder</Text>
       <View style={styles.organismos}>
         {opciones.map((opcion) => (
           <TouchableOpacity
@@ -34,29 +34,34 @@ const Organismos = () => {
           </TouchableOpacity>
         ))}
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    
   },
   tituloOrg: {
-    fontSize: 20,
+    fontSize: 24,
     marginBottom: 20,
+    marginTop:90,
+    textAlign:'center',
+    color:'olive',
   },
   organismos: {
     flexDirection: 'column',
     alignItems: 'center',
   },
   opcion: {
+    display:'flex',
     backgroundColor: 'lightblue',
     padding: 10,
     marginVertical: 10,
     borderRadius: 5,
+    width:250,
+    alignItems:'center'
   },
   opcionTexto: {
     fontSize: 22,

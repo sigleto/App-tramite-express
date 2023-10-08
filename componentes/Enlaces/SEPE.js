@@ -22,10 +22,10 @@ const SEPE = () => {
           <Text style={styles.itemText}>PRESOLICITUD</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoSEPE1")}>
-          <Text style={styles.itemText}>TRÁMITES RELATIVOS A PRESTACIONES</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>TRÁMITES RELATIVOS A PRESTACIONES</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoSEPE2")}>
-          <Text style={styles.itemText}>OBTENCIÓN DE CERTIFICADOS</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>OBTENCIÓN DE CERTIFICADOS</Text>
         </TouchableOpacity>
        
       </View>
@@ -67,7 +67,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
-  },
+  },arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default SEPE;

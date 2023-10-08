@@ -25,13 +25,13 @@ const Trafico = () => {
           <Text style={styles.itemText}>Cita previa para pasar la ITV</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisosTrafico3")}>
-          <Text style={styles.itemText}>Cambio en la titularidad de un vehículo</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Cambio en la titularidad de un vehículo</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisosTrafico4")}>
-          <Text style={styles.itemText}>Informe detallado de un vehículo</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Informe detallado de un vehículo</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisosTrafico5")}>
-          <Text style={styles.itemText}>Consulta de puntos del carnet de conducir</Text>
+          <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Consulta de puntos del carnet de conducir</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
@@ -72,7 +72,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
-  },
+  },arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default Trafico;

@@ -15,12 +15,7 @@ export const AvisoAEAT1 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-          ¡ATENCIÓN!: Para este trámite deberás estar dado de alta en Cl@ve
-          Móvil. Ten a mano tu DNI; la Agencia tributaria te pedirá el número de
-          tu DNI y la fecha de caducidad del mismo (o de expedición en caso de que
-          el DNI sea permanente). A continuación, saldrá una pantalla avisando de
-          que te envían un PIN a tu teléfono. En cuanto lo ingreses, ya podrás
-          realizar el trámite
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -42,12 +37,7 @@ export const AvisoAEAT2 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-          ¡ATENCIÓN!: Para este trámite deberás estar dado de alta en Cl@ve
-          Móvil. Ten a mano tu DNI; la Agencia tributaria te pedirá el número de
-          tu DNI y la fecha de caducidad del mismo (o de expedición en caso de que
-          el DNI sea permanente). A continuación, saldrá una pantalla avisando de
-          que te envían un PIN a tu teléfono. En cuanto lo ingreses, ya podrás
-          realizar el trámite
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -69,12 +59,7 @@ export const AvisoAEAT3 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-          ¡ATENCIÓN!: Para este trámite deberás estar dado de alta en Cl@ve
-          Móvil. Ten a mano tu DNI; la Agencia tributaria te pedirá el número de
-          tu DNI y la fecha de caducidad del mismo (o de expedición en caso de que
-          el DNI sea permanente). A continuación, saldrá una pantalla avisando de
-          que te envían un PIN a tu teléfono. En cuanto lo ingreses, ya podrás
-          realizar el trámite
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -120,12 +105,7 @@ export const AvisoAEAT5 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-          ¡ATENCIÓN!: Para este trámite deberás estar dado de alta en Cl@ve
-          Móvil. Ten a mano tu DNI; la Agencia tributaria te pedirá el número de
-          tu DNI y la fecha de caducidad del mismo (o de expedición en caso de que
-          el DNI sea permanente). A continuación, saldrá una pantalla avisando de
-          que te envían un PIN a tu teléfono. En cuanto lo ingreses, ya podrás
-          realizar el trámite
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -147,12 +127,7 @@ export const AvisoAEAT6 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-          ¡ATENCIÓN!: Para este trámite deberás estar dado de alta en Cl@ve
-          Móvil. Ten a mano tu DNI; la Agencia tributaria te pedirá el número de
-          tu DNI y la fecha de caducidad del mismo (o de expedición en caso de que
-          el DNI sea permanente). A continuación, saldrá una pantalla avisando de
-          que te envían un PIN a tu teléfono. En cuanto lo ingreses, ya podrás
-          realizar el trámite
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}

@@ -13,7 +13,8 @@ const Presentacion2 = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.parrafo}>
-       En cualquier caso, antes de acceder a cada trámite, te proporcionamos información sobre los datos y requisitos que podrías necesitar para llevar a cabo la gestión.
+      Esta autenticación puede realizarse a través de diferentes métodos, como el certificado digital, el DNI electrónico o el sistema cl@ve (que puedes solicitar en este 
+        <Text style={styles.link} onPress={() => Linking.openURL("https://sede.agenciatributaria.gob.es/Sede/clave.html")}> enlace</Text>). En cada trámite podrás ver este icono <Text style={styles.arroba}>@</Text> si se precisa la autenticación.
        </Text>
       <View style={styles.buttonContainer}>
         
@@ -32,13 +33,14 @@ const styles = StyleSheet.create({
     padding: 20,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: '#d9d7fa'
   },
   link: {
     color: "blue",
     textDecorationLine: "underline",
   },
   parrafo: {
-    fontSize: 25,
+    fontSize: 30,
     textAlign: 'justify',
     marginBottom: 30,
     paddingHorizontal: 20,
@@ -67,7 +69,10 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
-  },
+  },arroba:{
+    fontSize:20,
+    color:'#f41171'
+  }
 });
 
 export default Presentacion2;
