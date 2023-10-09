@@ -12,8 +12,6 @@ const AEAT = () => {
 
       {/* Sección para trámites que requieren Clave Móvil */}
       <View style={styles.section}>
-        <Text style={styles.subHeading}>Trámites que requieren Cl@ve Móvil:</Text>
-        <View style={styles.serviciosList}>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT2")}>
             <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Consulta de deudas</Text>
           </TouchableOpacity>
@@ -33,20 +31,13 @@ const AEAT = () => {
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT1")}>
             <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>Presentación de escrito sin comunicación previa</Text>
           </TouchableOpacity>
-        </View>
-      </View>
-
-      {/* Sección para trámites que no requieren Clave Móvil */}
-      <View style={styles.section}>
-        <Text style={styles.subHeading}>Trámites que no requieren Cl@ve Móvil:</Text>
-        <View style={styles.serviciosList}>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT4")}>
             <Text style={styles.itemText}>Contestación a una comunicación de la Agencia</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.item} onPress={() =>  Linking.openURL('https://www2.agenciatributaria.gob.es/wlpl/TOCP-MUTE/internet/identificacion' )}>
             <Text style={styles.itemText}>Petición de cita previa</Text>
           </TouchableOpacity>
-        </View>
+        
       </View>
     </ScrollView>
   );

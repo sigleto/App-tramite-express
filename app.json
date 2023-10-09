@@ -7,9 +7,11 @@
     "icon": "./assets/Icono4.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/adaptive-icon.png",
+      "image": "./assets/Icono3.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "accessibilityLabel": "Cargando aplicación"
+        
     },
     "assetBundlePatterns": [
       "**/*"
@@ -22,7 +24,8 @@
         "foregroundImage": "./assets/Icono4.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.sigleto.Tramiteexpress"
+      "package": "com.sigleto.Tramiteexpress",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"

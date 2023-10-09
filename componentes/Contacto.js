@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet,Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet,Image,ScrollView } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
 import { useNavigation } from '@react-navigation/native'; // Asumiendo que estás utilizando React Navigation
 
@@ -24,7 +24,7 @@ const Contacto = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text style={styles.titulo}>Contacta con nosotros</Text>
       <Controller
         control={control}
@@ -91,7 +91,7 @@ const Contacto = () => {
         </View>
       )}
       <Image source={require('../assets/Contacto.png')} style={styles.gatito} />
-    </View>
+    </ScrollView>
   );
 };
 
@@ -129,8 +129,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   gatito: {
-    width: 200,
-    height: 200,
+    width: 335,
+    height: 150,
     alignSelf: 'center',
   },
   zona:{
