@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator,CardStyleInterpolators } from '@react-navigation/stack';
 import { MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
-
+import { SharedElement } from "react-navigation-shared-element";
 
 import Home from './Home';
 import Presentacion1 from './Presentacion/Presentacion1';
@@ -75,13 +75,47 @@ export function OrganismosStack() {
 }
 export function PresentacionStack() {
   return (
-    <Stack.Navigator initialRouteName="Presentacion1" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Presentacion1" component={Presentacion1} screenOptions={{ headerShown: false }}/>
-      <Stack.Screen name="Presentacion2" component={Presentacion2} screenOptions={{ headerShown: false }}/>
-      <Stack.Screen name="Presentacion3" component={Presentacion3} screenOptions={{ headerShown: false }}/>
+    <Stack.Navigator
+      initialRouteName="Presentacion1"
+      screenOptions={{
+        headerShown: false,
+        gestureEnabled: true,
+        gestureDirection: "horizontal",
+        transitionSpec: {
+          open: { animation: "timing", config: { duration: 500 } },
+          close: { animation: "timing", config: { duration: 500 } },
+        },
+        cardStyleInterpolator: ({ current: { progress } }) => {
+          return {
+            cardStyle: {
+              opacity: progress,
+            },
+          };
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Presentacion1"
+        component={Presentacion1}
+        options={() => ({headerShown: false,cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        })}
+      />
+      <Stack.Screen
+        name="Presentacion2"
+        component={Presentacion2}
+        options={() => ({headerShown: false,cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        })}
+      />
+      <Stack.Screen
+        name="Presentacion3"
+        component={Presentacion3}
+        options={() => ({headerShown: false,cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+        })}
+      />
     </Stack.Navigator>
   );
 }
+
 
 
 

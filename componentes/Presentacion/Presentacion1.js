@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text, StyleSheet, Linking,TouchableOpacity } from "react-native";
 import { useNavigation } from '@react-navigation/native';
+import { SharedElement } from "react-navigation-shared-element";
+
 
 const Presentacion1 = () => {
 
@@ -10,9 +12,11 @@ const Presentacion1 = () => {
 
   return (
     <View style={styles.container}>
+       <SharedElement id="elementId">
       <Text style={styles.parrafo}>
-        Aquí encontrarás los trámites públicos más habituales más comunmente empleados en diversos organismos gubernamentales.
+        Aquí encontrarás los trámites públicos administrativos más comunmente empleados en diversos organismos gubernamentales.
        </Text>
+       </SharedElement>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.skipButton} onPress={salto}>
           <Text style={styles.buttonText}>SALTAR</Text>

@@ -1,10 +1,10 @@
-
-
 import React from "react";
 import { View, Text, StyleSheet, Linking,TouchableOpacity } from "react-native";
 import { useNavigation } from '@react-navigation/native';
+import { SharedElement } from "react-navigation-shared-element";
 
-const Presentacion2 = () => {
+
+const Presentacion3 = () => {
 
   const navegacion = useNavigation();
   const pasa = () => { navegacion.navigate("Nav") }
@@ -12,10 +12,12 @@ const Presentacion2 = () => {
 
   return (
     <View style={styles.container}>
+       <SharedElement id="elementId">
       <Text style={styles.parrafo}>
       Esta autenticación puede realizarse a través de diferentes métodos, como el certificado digital, el DNI electrónico o el sistema cl@ve (que puedes solicitar en este 
         <Text style={styles.link} onPress={() => Linking.openURL("https://sede.agenciatributaria.gob.es/Sede/clave.html")}> enlace</Text>). En cada trámite podrás ver este icono <Text style={styles.arroba}>@</Text> si se precisa la autenticación.
        </Text>
+       </SharedElement>
       <View style={styles.buttonContainer}>
         
         <TouchableOpacity style={styles.nextButton} onPress={pasa}>
@@ -75,5 +77,5 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Presentacion2;
+export default Presentacion3;
 

@@ -5,8 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { PresentacionStack } from './componentes/Nav';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { enableScreens } from "react-native-screens";
 
-const Stack = createStackNavigator();
+enableScreens();
+const Stack = createStackNavigator()
 
 const App = () => {
 

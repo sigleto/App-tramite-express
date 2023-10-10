@@ -1,8 +1,7 @@
-
-
 import React from "react";
 import { View, Text, StyleSheet, Linking,TouchableOpacity } from "react-native";
 import { useNavigation } from '@react-navigation/native';
+import { SharedElement } from "react-navigation-shared-element";
 
 const Presentacion2 = () => {
 
@@ -12,10 +11,11 @@ const Presentacion2 = () => {
 
   return (
     <View style={styles.container}>
+       <SharedElement id="elementId">
       <Text style={styles.parrafo}>
       Aunque en muchos de estos procedimientos no es necesario que los usuarios se autentiquen previamente, en algunos casos sí es requerido.
-        
-        </Text>
+      </Text>
+      </SharedElement>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.skipButton} onPress={salto}>
           <Text style={styles.buttonText}>SALTAR</Text>
