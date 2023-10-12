@@ -15,7 +15,7 @@ export const AvisoAEAT1 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -37,7 +37,7 @@ export const AvisoAEAT2 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -59,7 +59,7 @@ export const AvisoAEAT3 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -105,7 +105,7 @@ export const AvisoAEAT5 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}
@@ -127,7 +127,7 @@ export const AvisoAEAT6 = () => {
     <View style={[styles.container, centerStyle]}>
       <View style={styles.aviso}>
         <Text style={styles.texto}>
-        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe
+        ¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe
         </Text>
         <Text
           style={styles.avisoLink}

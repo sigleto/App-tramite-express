@@ -7,7 +7,7 @@ import { SharedElement } from "react-navigation-shared-element";
 const Presentacion3 = () => {
 
   const navegacion = useNavigation();
-  const pasa = () => { navegacion.navigate("Nav") }
+  const pasa = () => { navegacion.navigate("Organismos") }
   
 
   return (

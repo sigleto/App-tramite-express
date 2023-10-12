@@ -46,9 +46,10 @@ const styles = StyleSheet.create({
   tituloOrg: {
     fontSize: 24,
     marginBottom: 20,
-    marginTop:90,
+    marginTop:70,
     textAlign:'center',
-    color:'olive',
+    color:'#54722e',
+    textDecorationLine:'underline'
   },
   organismos: {
     flexDirection: 'column',

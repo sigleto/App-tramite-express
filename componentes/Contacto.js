@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet,Image,ScrollView } from 'react-native';
+import { Button,View, Text, TextInput, TouchableOpacity, StyleSheet,Image,ScrollView } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
 import { useNavigation } from '@react-navigation/native'; // Asumiendo que estás utilizando React Navigation
+import { MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
 
 const Contacto = () => {
   const navigation = useNavigation();
-  const { control, handleSubmit, reset, formState: { errors } } = useForm();
+
+   const { control, handleSubmit, reset, formState: { errors } } = useForm();
   
   const accion = async (data) => {
     try {
@@ -25,6 +27,7 @@ const Contacto = () => {
 
   return (
     <ScrollView style={styles.container}>
+      
       <Text style={styles.titulo}>Contacta con nosotros</Text>
       <Controller
         control={control}

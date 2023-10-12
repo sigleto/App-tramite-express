@@ -27,7 +27,7 @@ export const AvisosTrafico3 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://sede.dgt.gob.es/es/vehiculos/transferencias-de-vehiculos/cambio-titularidad-vehiculo/index.shtml')}>Ir a trámite</Text>
     </View>
     </View>
@@ -38,7 +38,7 @@ export const AvisosTrafico4 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://sedeclave.dgt.gob.es/WEB_INTV_INTER/xhtml/acciones/iniciarSolicitudInforme.jsf')}>Ir a trámite</Text>
     </View>
     </View>
@@ -49,7 +49,7 @@ export const AvisosTrafico5 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://sede.dgt.gob.es/es/permisos-de-conducir/consulta-tus-puntos/')}>Ir a trámite</Text>
     </View>
     </View>

@@ -2,8 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator,CardStyleInterpolators } from '@react-navigation/stack';
-import { MaterialCommunityIcons,MaterialIcons } from "@expo/vector-icons";
-import { SharedElement } from "react-navigation-shared-element";
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import Home from './Home';
 import Presentacion1 from './Presentacion/Presentacion1';
@@ -119,39 +118,49 @@ export function PresentacionStack() {
 
 
 
-const Nav = () => {
+export function PrincipalStack(){
   return (
    
-      <Tab.Navigator
-        screenOptions={{
-          tabBarActiveTintColor: 'blue', // Color de la pestaña activa
-          tabBarInactiveTintColor: '#7a3105', // Color de la pestaña inactiva
-          tabBarLabelStyle: styles.tabLabel, // Estilo de la etiqueta de la pestaña
-          tabBarStyle: styles.tabBar, // Estilo de la barra de pestañas
-        }}
-      >
-        <Tab.Screen
+      <Stack.Navigator>
+        <Stack.Screen
           name="Home"
           component={Home}
-          options={{ tabBarLabel: 'INICIO', tabBarIcon: () => (
-            <MaterialCommunityIcons name="home"  size={26} />), headerShown: false}}
+          options={{  headerShown: false}}
         />
-        <Tab.Screen
+        <Stack.Screen
           name="Organismos"
           component={OrganismosStack}
-          options={{ tabBarLabel: 'ORGANISMOS',tabBarIcon: () => (
-            <MaterialCommunityIcons name="office-building"  size={26} />),  headerShown: false }}
+          options={{  headerShown: false }}
         />
-        <Tab.Screen
+        <Stack.Screen
           name="Contacto"
           component={Contacto}
-          options={{ tabBarLabel: 'CONTACTO', tabBarIcon: () => (
-            <MaterialCommunityIcons name="contacts"  size={26} />), headerShown: false }}
+          options={{ headerShown: false }}
         />
-      </Tab.Navigator>
+      </Stack.Navigator>
    
   );
 };
+
+const Drawer=createDrawerNavigator()
+export function DrawerNavigator() {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Contacto" component={Contacto} />
+      <Drawer.Screen name="PresentacionStack" component={PresentacionStack} />
+      <Drawer.Screen
+        name="PoliticaPrivacidad"
+        component={() => {
+          Linking.openURL(
+            'https://docs.google.com/document/d/1WeAEvL7FxXA_O4_zxrsrNYAwIotUXOKZeOv_mMZOV-c/edit'
+          );
+          return null;
+        }}
+      />
+    </Drawer.Navigator>
+  );
+};
+
 
 const styles = StyleSheet.create({
   container: {
@@ -172,6 +181,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Nav;
 
 

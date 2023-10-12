@@ -7,7 +7,7 @@ const Presentacion2 = () => {
 
   const navegacion = useNavigation();
   const pasa = () => { navegacion.navigate("Presentacion3") }
-  const salto = () => { navegacion.navigate("Nav") }
+  const salto = () => { navegacion.navigate("Organismos") }
 
   return (
     <View style={styles.container}>

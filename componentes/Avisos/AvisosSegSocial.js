@@ -5,7 +5,7 @@ export const AvisoSegSocial1 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para este trámite necesitas estar dado de alta en Cl@ve Móvil</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social')}>Ir a trámite</Text>
     </View>
     </View>

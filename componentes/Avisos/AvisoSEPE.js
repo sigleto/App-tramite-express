@@ -5,7 +5,7 @@ export const AvisoSEPE1 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar estos trámites deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar estos trámites deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://www.sepe.es/HomeSepe/Personas/distributiva-prestaciones.html')}>Ir a trámite</Text>
     </View>
     </View>
@@ -15,7 +15,7 @@ export const AvisoSEPE2 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar estos trámites deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar estos trámites deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://sede.sepe.gob.es/DServiciosPrestanetWEB/CertificadosPrestaWeb.do')}>Ir a trámite</Text>
     </View>
     </View>

@@ -15,7 +15,7 @@ export const AvisoMUFACE2 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar estE trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://www.muface.es/muface_Home/muface_Index/aviso-tse.html')}>Ir a trámite</Text>
     </View>
     </View>
@@ -25,7 +25,7 @@ export const AvisoMUFACE3 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar estE trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con C@ave,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://www.muface.es/muface_Home/muface_Index/Prestaciones-Dentarias-y-Oculares.html')}>Ir a trámite</Text>
     </View>
     </View>
