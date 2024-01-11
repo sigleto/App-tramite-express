@@ -35,15 +35,7 @@ const Home = () => {
         </TouchableOpacity>
       <View style={styles.privacidadContainer}>
         
-        <TouchableOpacity
-          onPress={() =>
-            politica(
-              "https://docs.google.com/document/d/1WeAEvL7FxXA_O4_zxrsrNYAwIotUXOKZeOv_mMZOV-c/edit"
-            )
-          }
-        >
-          <Text style={styles.privacidad}>Política de privacidad</Text>
-        </TouchableOpacity>
+        
       </View>
     </View>
   );

@@ -26,7 +26,7 @@ import { AvisosTrafico1, AvisosTrafico2, AvisosTrafico3, AvisosTrafico4, AvisosT
 import { AvisoSegSocial1, AvisoSegSocial2 } from './Avisos/AvisosSegSocial'
 import { AvisoSEPE1, AvisoSEPE2 } from './Avisos/AvisoSEPE'
 import { AvisoMUFACE1, AvisoMUFACE2,AvisoMUFACE3 } from './Avisos/AvisosMUFACE'
-
+import PoliticaPrivacidad from './PoliticaPrivacidad';
 
 
 
@@ -44,6 +44,7 @@ export function OrganismosStack() {
       <Stack.Screen name="MUFACE" component={MUFACE} options={{ headerShown: false }} />
       <Stack.Screen name="Catastro" component={Catastro} options={{ headerShown: false }} />
       <Stack.Screen name="Justicia" component={Justicia} options={{ headerShown: false }} />
+      <Stack.Screen name="PoliticaProvacidad" component={PoliticaPrivacidad} options={{ headerShown: false }} />
       <Stack.Screen name="PoliciaNacional" component={PoliciaNacional} options={{ headerShown: false }} />
       <Stack.Screen name="SegSocial" component={SegSocial} options={{ headerShown: false }} />
       <Stack.Screen name="Trafico" component={Trafico} options={{ headerShown: false }} />
@@ -135,6 +136,11 @@ export function PrincipalStack(){
         <Stack.Screen
           name="Contacto"
           component={Contacto}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Politica"
+          component={PoliticaPrivacidad}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
