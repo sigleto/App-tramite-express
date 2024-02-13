@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet,Linking } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
+import Anuncio from "../Avisos/Anuncio";
 const AEAT = () => {
   const navigation = useNavigation();
 
@@ -9,7 +9,7 @@ const AEAT = () => {
     <ScrollView style={styles.container}>
       <Image source={require('../../assets/AEAT.jpg')} style={styles.image} />
       <Text style={styles.titulo}>Servicios de la AEAT</Text>
-
+      <Anuncio/>
       {/* Sección para trámites que requieren Clave Móvil */}
       <View style={styles.section}>
           <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoAEAT2")}>

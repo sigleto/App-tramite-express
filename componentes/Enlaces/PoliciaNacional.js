@@ -1,9 +1,10 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, Linking, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import Anuncio from "../Avisos/Anuncio";
 
 const PoliciaNacional = () => {
-  const navigation = useNavigation();
+ const navigation = useNavigation();
 
   const openLink = (url) => {
     Linking.openURL(url);
@@ -13,7 +14,7 @@ const PoliciaNacional = () => {
     <ScrollView style={styles.container}>
       <Image source={require("../../assets/policia.jpg")} style={styles.image} />
       <Text style={styles.titulo}>Servicios de la Policía Nacional</Text>
-
+      <Anuncio/>
       <View style={styles.serviciosList}>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoPolicia")}>
           <Text style={styles.itemText}>Cita previa para renovación de DNI</Text>

@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet,ScrollView} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { BannerAd, BannerAdSize, TestIds} from 'react-native-google-mobile-ads';
+
 
 const Organismos = () => {
   const navigation = useNavigation();
-
+  const adUnitId = __DEV__ ? TestIds.ADAPTIVE_BANNER : 'ca-app-pub-9777143216104753/6640854954';
   const navigateToOrganismo = (ruta) => {
     navigation.navigate(ruta);
   };
@@ -23,6 +25,10 @@ const Organismos = () => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.tituloOrg}>Elige el organismo al que deseas acceder</Text>
+      <BannerAd
+      unitId={adUnitId}
+      size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+    />
       <View style={styles.organismos}>
         {opciones.map((opcion) => (
           <TouchableOpacity

@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, Linking, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import Anuncio from "../Avisos/Anuncio";
 
 const SegSocial = () => {
   const navigation = useNavigation();
@@ -13,7 +14,7 @@ const SegSocial = () => {
     <ScrollView style={styles.container}>
       <Image source={require("../../assets/SeguridadSocial.jpg")} style={styles.image} />
       <Text style={styles.titulo}>Servicios de la Seguridad Social</Text>
-
+      <Anuncio/>
       <View style={styles.serviciosList}>
         <TouchableOpacity style={styles.item} onPress={() => openLink('https://imv.seg-social.es/')}>
           <Text style={styles.itemText}>Solicitud Ingreso mínimo vital</Text>

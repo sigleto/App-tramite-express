@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, Linking, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import Anuncio from "../Avisos/Anuncio";
 
 const Trafico = () => {
   const navigation = useNavigation();
@@ -13,7 +14,7 @@ const Trafico = () => {
     <ScrollView style={styles.container}>
       <Image source={require("../../assets/trafico.png")} style={styles.image} />
       <Text style={styles.titulo}>Servicios de la Dirección General de Tráfico</Text>
-
+      <Anuncio/>
       <View style={styles.serviciosList}>
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisosTrafico1")}>
           <Text style={styles.itemText}>Pago de multas</Text>

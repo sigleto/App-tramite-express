@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, Linking, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
+import Anuncio from "../Avisos/Anuncio";
 const Justicia = () => {
   const navigation = useNavigation();
 
@@ -13,7 +13,7 @@ const Justicia = () => {
     <ScrollView style={styles.container}>
       <Image source={require('../../assets/justicia.png')} style={styles.image} />
       <Text style={styles.titulo}>Servicios de Justicia</Text>
-
+      <Anuncio/>
       <View style={styles.serviciosList}>
         <TouchableOpacity style={styles.item} onPress={() => openLink('https://sede.mjusticia.gob.es/sereci/initDatosGenerales?idMateria=NAC&idtramite=102&lang=es_es&idpagina=1215197884559')}>
           <Text style={styles.itemText}>CERTIFICADO DE NACIMIENTO</Text>

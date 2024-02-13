@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Image, ScrollView, TouchableOpacity, Linking, StyleSheet } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-
+import Anuncio from "../Avisos/Anuncio";
 const Catastro = () => {
   const navigation = useNavigation();
 
@@ -13,7 +13,7 @@ const Catastro = () => {
     <ScrollView style={styles.container}>
       <Image source={require("../../assets/catastro.png")} style={styles.image} />
       <Text style={styles.titulo}>Servicios del Catastro</Text>
-
+      <Anuncio/>
       <View style={styles.serviciosList}>
         <TouchableOpacity style={styles.item} onPress={() => openLink('https://www1.sedecatastro.gob.es/Cartografia/mapa.aspx?buscar=S')}>
           <Text style={styles.itemText}>Buscar un inmueble por su referencia catastral</Text>
