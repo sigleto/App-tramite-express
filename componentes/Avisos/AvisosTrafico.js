@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Linking,StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export const AvisosTrafico1 = () => {
   return (
@@ -13,11 +14,13 @@ export const AvisosTrafico1 = () => {
 };
 
 export const AvisosTrafico2 = () => {
+  const navigation=useNavigation();
+  const inspeccion=()=>{navigation.navigate("CitaITV")}
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Además de la matrícula, te van a pedir también un dato más del vehículo, que puede ser el número de bastidor (lo encontrarás tanto en el permiso de circulación como en la ficha técnica, apartado E) o la fecha de matriculación, que encontrarás en el permiso de circulación.</Text>
-      <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://www.itvcita.com/Welcome.do;jsessionid=m2aaDJRF8WgTKnqJYTGXB3uo6EuyGqN-KO3KUMh3.master:nodo-citas1')}>Ir a trámite</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Además de la matrícula, dependiendo de tu comunidad de residencia, te pueden pedir también un dato más del vehículo, que puede ser el número de bastidor (lo encontrarás tanto en el permiso de circulación como en la ficha técnica, apartado E) o la fecha de matriculación, que encontrarás en el permiso de circulación.</Text>
+      <Text style={styles.avisoLink} onPress={inspeccion}>Ir a trámite</Text>
     </View>
     </View>
   );
@@ -27,7 +30,7 @@ export const AvisosTrafico3 = () => {
   return (
     <View style={styles.container}>
     <View style={styles.aviso}>
-      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite deberás autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
+      <Text style={styles.texto}>¡ATENCIÓN!: Para realizar este trámite, deberás de autenticarte con Cl@ve,Certificado Digital o DNIe</Text>
       <Text style={styles.avisoLink} onPress={() => Linking.openURL('https://sede.dgt.gob.es/es/vehiculos/transferencias-de-vehiculos/cambio-titularidad-vehiculo/index.shtml')}>Ir a trámite</Text>
     </View>
     </View>

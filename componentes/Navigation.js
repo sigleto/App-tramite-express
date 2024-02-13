@@ -27,6 +27,8 @@ import { AvisoSegSocial1, AvisoSegSocial2 } from './Avisos/AvisosSegSocial'
 import { AvisoSEPE1, AvisoSEPE2 } from './Avisos/AvisoSEPE'
 import { AvisoMUFACE1, AvisoMUFACE2,AvisoMUFACE3 } from './Avisos/AvisosMUFACE'
 import PoliticaPrivacidad from './PoliticaPrivacidad';
+import CitaITV from './Avisos/ITV';
+import PaginasITV from './Avisos/PaginasITV';
 
 
 
@@ -70,6 +72,8 @@ export function OrganismosStack() {
       <Stack.Screen name="AvisosTrafico5" component={AvisosTrafico5}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoSegSocial1" component={AvisoSegSocial1}options={{ headerShown: false }} />
       <Stack.Screen name="AvisoSegSocial2" component={AvisoSegSocial2}options={{ headerShown: false }} />
+      <Stack.Screen name="CitaITV" component={CitaITV}options={{ headerShown: false }} />
+      <Stack.Screen name="PaginasITV" component={PaginasITV}options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }
