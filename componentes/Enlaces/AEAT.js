@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet,Linking } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet, Linking } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Anuncio from "../Avisos/Anuncio";
+
 const AEAT = () => {
   const navigation = useNavigation();
 
@@ -38,6 +39,9 @@ const AEAT = () => {
             <Text style={styles.itemText}>Petición de cita previa</Text>
           </TouchableOpacity>
         
+          <TouchableOpacity style={styles.volver} onPress={()=>navigation.navigate("OrganismosStack")}>
+            <Text style={styles.volverText}>VOLVER</Text>
+          </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -60,6 +64,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 16,
+    textAlign:'center',
   },
   section: {
     marginBottom: 16,
@@ -81,10 +86,29 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     backgroundColor: "#f0f0f0",
   },
+  volver: {
+    marginTop: 30,
+    marginBottom:20,
+    paddingVertical: 8,
+    paddingHorizontal: 8,
+    borderWidth: 1,
+    borderColor: "#007AFF",
+    borderRadius: 8,
+    backgroundColor: "#a3c267",
+  
+  },
+  volverText: {
+    fontSize: 16,
+    color: "#007AFF",
+    fontWeight: "bold",
+    textAlign:'center',
+  },
   itemText: {
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
+    textAlign:'center',
+    textAlign:'center',
   },
   arroba:{
     fontSize:20,

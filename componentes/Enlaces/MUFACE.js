@@ -29,7 +29,9 @@ const MUFACE = () => {
         <TouchableOpacity style={styles.item} onPress={() => navigation.navigate("AvisoMUFACE2")}>
           <Text style={styles.itemText}><Text style={styles.arroba}>@</Text>TARJETA SANITARIA EUROPEA</Text>
         </TouchableOpacity>
-       
+        <TouchableOpacity style={styles.volver} onPress={()=>navigation.navigate("OrganismosStack")}>
+            <Text style={styles.volverText}>VOLVER</Text>
+          </TouchableOpacity>
       </View>
     </ScrollView>
   );
@@ -52,6 +54,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 16,
+    textAlign:'center',
   },
   serviciosList: {
     marginLeft: 16,
@@ -69,7 +72,26 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#007AFF",
     fontWeight: "bold",
-  },arroba:{
+    textAlign:'center',
+  },
+  volver: {
+    marginTop: 30,
+    marginBottom:20,
+    paddingVertical: 8,
+    paddingHorizontal: 8,
+    borderWidth: 1,
+    borderColor: "#007AFF",
+    borderRadius: 8,
+    backgroundColor: "#a3c267",
+  
+  },
+  volverText: {
+    fontSize: 16,
+    color: "#007AFF",
+    fontWeight: "bold",
+    textAlign:'center',
+  },
+  arroba:{
     fontSize:20,
     color:'#f41171'
   }

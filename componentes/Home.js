@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 300,
     height: 200,
-    marginTop:50,
+    marginTop:55,
   },
   burocraciaImage: {
     width: 300,
@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
     color: 'white', // Color del texto del botón
     textAlign: 'center',
     fontWeight: 'bold',
-  }, privacidadContainer: {
+  }, 
+  privacidadContainer: {
     position: "absolute",
     bottom: 0,
     right: 0,
@@ -98,7 +99,7 @@ const styles = StyleSheet.create({
   } , menuIcon: {
     position: 'absolute',
     top: 40,
-    left: 20,
+    left: 15,
     fontSize:40,
     zIndex: 1,
   },

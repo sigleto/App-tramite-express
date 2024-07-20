@@ -4,14 +4,13 @@
     "slug": "Tramite-express",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Icono4.png",
+    "icon": "./assets/Icono.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/Icono3.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff",
       "accessibilityLabel": "Cargando aplicación"
-        
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,11 +20,14 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/Icono4.png",
+        "foregroundImage": "./assets/Icono.png",
         "backgroundColor": "#ffffff"
       },
+      "permissions": [
+        "com.google.android.gms.permission.AD_ID"
+      ],
       "package": "com.sigleto.Tramiteexpress",
-      "versionCode": 2
+      "versionCode": 13
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,10 +36,12 @@
       "eas": {
         "projectId": "e24872ff-6962-45d9-9104-b203731c1295"
       }
-    }
+    },
+    "plugins": [
+      "react-native-google-mobile-ads"
+    ]
   },
   "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-9777143216104753~6691636476"
-    
+    "android_app_id": "ca-app-pub-6921150380725872~5975215906"
   }
 }
